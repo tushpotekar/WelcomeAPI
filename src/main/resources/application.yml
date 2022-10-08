@@ -1,0 +1,24 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: WELCOME-API
+    
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090/
+
+eureka:
+  client:
+    allow-redirects: false
+    register-with-eureka: false
+    fetch-registry: false
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
